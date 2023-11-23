@@ -16,7 +16,7 @@ ESERCIZIO MAIL
     3 - La tua email non corrisponde;
 2b - La tua email corrispone;
 
-ESERCIZIO DATI
+ESERCIZIO DADI
 1 - Creo un algoritmo che generi un numero randomico da 1 a 6 per il computer;
 2 - Creo un algoritmo che generi un numero randomico da 1 a 6 per l'utente;
 3 - Faccio un bottone che permetta di lanciare i dadi;
