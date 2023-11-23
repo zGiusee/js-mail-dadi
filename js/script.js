@@ -1,29 +1,37 @@
 // ESERCIZIO NUM 1
 
-let emailArray = ["peppe@gmail.com", "peppe123@gmail.com", "123peppe@gmail.com"];
+const emailArray = ["peppe@gmail.com", "peppe123@gmail.com", "123peppe@gmail.com"];
 
 let email_btn = document.getElementById("email_btn");
 
 email_btn.addEventListener("click", function(){
 
+    // CREO LE VARIABILI
     let email = document.getElementById("email").value;
     let message; 
+    let check = false;
 
-    for(let i=0; (i<emailArray.length); i++){
-        
-        if(email != emailArray[i]){
-            message = "Email Sbagliata"
-            console.log("email sbagliata")
+    // ESEGUO IL CICLO FOR PER CONFRONTARE GLI INDICI
+    for(let i=0; i<emailArray.length; i++){
+    
+        if(email === emailArray[i]){
+            check = true;
         }
-        else if(email === emailArray[i]){
-            message = "Email corretta!"
-            console.log("email corretta")
-        }
+    
     }
 
+    // ESEGUO IL CONTROLLO DEI DATI
+    if(check){
+        message = "Email corretta!"
+        console.log("email corretta")
+    }
+    else{
+        message = "Email Sbagliata"
+    }
+
+    // STAMPO IL MESSAGGIO IN HTML
     document.getElementById("email_msg").innerHTML = message;
 
-    console.log("Email Utente:" + email)
 })
 
 
