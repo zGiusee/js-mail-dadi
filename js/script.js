@@ -1,3 +1,30 @@
+// ESERCIZIO NUM 1
+
+let emailArray = ["peppe@gmail.com", "peppe123@gmail.com", "123peppe@gmail.com"];
+
+let email_btn = document.getElementById("email_btn");
+
+email_btn.addEventListener("click", function(){
+
+    let email = document.getElementById("email").value;
+    let message; 
+
+    for(let i=0; (i<emailArray.length); i++){
+        
+        if(email != emailArray[i]){
+            message = "Email Sbagliata"
+            console.log("email sbagliata")
+        }
+        else if(email === emailArray[i]){
+            message = "Email corretta!"
+            console.log("email corretta")
+        }
+    }
+
+    document.getElementById("email_msg").innerHTML = message;
+
+    console.log("Email Utente:" + email)
+})
 
 
 
@@ -7,8 +34,11 @@
 // INDICO DOVE SI TROVA IL BOTTONE NEL DOCUMENTO
 let dice_btn = document.getElementById("dice_btn");
 
+
 // CREO LA FUNZIONE DEL BOTTONE CHE LANCI I DADI
 dice_btn.addEventListener("click", function(){
+
+    let message;
 
     // CREO I GENERATORI DI NUMERI CASUALI
     let dado1 = Math.random() * (6 - 1) + 1 ;
@@ -31,16 +61,18 @@ dice_btn.addEventListener("click", function(){
     // ESEGUO LE CONDIZIONI E IL MESSAGIO INFORMATIVO SU CHI HA VINTO
     if(umano < computer){
         console.log("Il Computer ha vinto!")
-        document.getElementById("dice_winner").innerHTML = "Il computer ha vinto!";
+        message = "Il computer ha vinto!";
     }
     else if(umano > computer){
-        document.getElementById("dice_winner").innerHTML = "L'umano ha vinto!";
+        message = "L'umano ha vinto!";
         console.log("L'umano ha vinto!")
     }
     else if(umano == computer){
         console.log("Pareggio!")
-        document.getElementById("dice_winner").innerHTML = "Pareggio!";
+        message = "Pareggio!";
     }
+
+    document.getElementById("dice_winner").innerHTML = message;
 
 })
 

@@ -11,17 +11,33 @@
     <main>
         <div class="container">
             <div class="row">
+
+                <!-- EMAIL VERIFICATION -->
+                <div class="col-12 my-3">
+                    <div class="justify-content-center d-flex">
+                        <div>
+                            <label for="email" class="d-block">Verifica la tua email!</label>
+                            <input type="email" name="email" class="form-control my-2" id="email">
+                            <button id="email_btn" class="btn btn-primary">Verifica ora!</button>
+                            <p id="email_msg"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DICE GAME -->
+                
                 <div class="col-12">
                     <div class="text-center">
-                        <div>
+                        <div class="my-3">
                             <button class="btn btn-danger" id="dice_btn">Lancia i dadi</button>
                         </div>
-                        <div>
+                        <div class="my-3">
                             <p><span id="umano"></span> <span id="computer"></span></p>
                             <p id="dice_winner"></p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </main>
