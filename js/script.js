@@ -17,6 +17,9 @@ dice_btn.addEventListener("click", function(){
     let dado2 = Math.random() * (6 - 1) + 1 ;
     dado2 = dado2.toFixed(0);
 
+    document.getElementById("umano").innerHTML = dado2;
+    document.getElementById("computer").innerHTML = dado1;
+
     // FACCIO IN MODO DI STAMPARE IL RISULTATO SULLA CONSOLE
     console.log(dado1);
     console.log(dado2);
@@ -28,12 +31,15 @@ dice_btn.addEventListener("click", function(){
     // ESEGUO LE CONDIZIONI E IL MESSAGIO INFORMATIVO SU CHI HA VINTO
     if(umano < computer){
         console.log("Il Computer ha vinto!")
+        document.getElementById("dice_winner").innerHTML = "Il computer ha vinto!";
     }
     else if(umano > computer){
+        document.getElementById("dice_winner").innerHTML = "L'umano ha vinto!";
         console.log("L'umano ha vinto!")
     }
     else if(umano == computer){
         console.log("Pareggio!")
+        document.getElementById("dice_winner").innerHTML = "Pareggio!";
     }
 
 })
