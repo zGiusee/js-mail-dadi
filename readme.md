@@ -11,7 +11,8 @@ Che ci sia un array da qualche parte?
 Se dobbiamo confrontare qualcosa che "cosa" ci serve?
 
 ESERCIZIO MAIL
-1 - Chido l'email all'utente attraverso il prompt/input;
+1 - Creo una lista di mail;
+1.1 - Chido l'email all'utente attraverso il prompt/input;
 2a - ? email corrisponde a quelle nella lista;
     3 - La tua email non corrisponde;
 2b - La tua email corrispone;

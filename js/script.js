@@ -9,6 +9,8 @@ email_btn.addEventListener("click", function(){
     // CREO LE VARIABILI
     let email = document.getElementById("email").value;
     let message; 
+
+    // DICHIARO LA VARIABILE CHECK PER VERIFICARE SE L'EMAIL è PRESENTE NELL'ARRAY
     let check = false;
 
     // ESEGUO IL CICLO FOR PER CONFRONTARE GLI INDICI
@@ -25,11 +27,10 @@ email_btn.addEventListener("click", function(){
         message = "Complimenti, l'email che hai inserito è corretta! Ora puoi lanciare i dadi!"
         // console.log("L'email che hai inserito è corretta. Ora puoi lanciare i dadi!")
 
-    // ESERCIZIO NUM 2
+    // ESERCIZIO NUM 2 CONCATENATO CON LA VERIFICA DELL'EMAIL
 
     // INDICO DOVE SI TROVA IL BOTTONE NEL DOCUMENTO
     let dice_btn = document.getElementById("dice_btn");
-
 
     // CREO LA FUNZIONE DEL BOTTONE CHE LANCI I DADI
     dice_btn.addEventListener("click", function(){
@@ -47,8 +48,8 @@ email_btn.addEventListener("click", function(){
     document.getElementById("computer").innerHTML = ` Computer: ${dado1}`;
 
     // FACCIO IN MODO DI STAMPARE IL RISULTATO SULLA CONSOLE
-    console.log(dado1);
-    console.log(dado2);
+    // console.log(dado1);
+    // console.log(dado2);
 
     // CREO LE VARIABILI CHE AVRANNO COME VALORE I NUMERI GENERATI
     let computer = dado1;
@@ -56,15 +57,15 @@ email_btn.addEventListener("click", function(){
 
     // ESEGUO LE CONDIZIONI E IL MESSAGIO INFORMATIVO SU CHI HA VINTO
     if(umano < computer){
-        console.log("Il Computer ha vinto!")
+        // console.log("Il Computer ha vinto!")
         message = "Il computer ha vinto!";
     }
     else if(umano > computer){
         message = "L'umano ha vinto!";
-        console.log("L'umano ha vinto!")
+        // console.log("L'umano ha vinto!")
     }
     else if(umano == computer){
-        console.log("Pareggio!")
+        // console.log("Pareggio!")
         message = "Pareggio!";
     }
 
