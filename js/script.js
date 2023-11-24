@@ -34,7 +34,7 @@ email_btn.addEventListener("click", function(){
 
         // ESERCIZIO NUM 2 CONCATENATO CON LA VERIFICA DELL'EMAIL
 
-        dice_btn.style.display = "block";
+        dice_btn.style.display = "flex";
 
         // CREO LA FUNZIONE DEL BOTTONE CHE LANCI I DADI
         dice_btn.addEventListener("click", function(){
