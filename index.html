@@ -15,11 +15,17 @@
                 <!-- EMAIL VERIFICATION -->
                 <div class="col-12 my-3">
                     <div class="justify-content-center d-flex">
-                        <div>
-                            <label for="email" class="d-block">Verifica la tua email!</label>
-                            <input type="email" name="email" class="form-control my-2" id="email">
-                            <button id="email_btn" class="btn btn-primary">Verifica ora!</button>
-                            <p id="email_msg"></p>
+                        <div class="text-center d-flex justify-content-center align-items-center flex-column">
+                            <div>
+                                <label for="email" class="d-block">Verifica la tua email!</label>
+                            </div>
+                            <div class="mt-2">
+                                <input type="email" name="email" class="form-control my-2" id="email">
+                            </div>
+                            <div class="mt-3">
+                                <button id="email_btn" class="btn btn-primary">Verifica ora!</button>
+                                <p class="mt-3" id="email_msg"></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -32,7 +38,7 @@
                             <button class="btn btn-danger" id="dice_btn">Lancia i dadi</button>
                         </div>
                         <div class="my-3">
-                            <p><span id="umano"></span> <span id="computer"></span></p>
+                            <p><span id="umano"></span><span id="computer"></span></p>
                             <p id="dice_winner"></p>
                         </div>
                     </div>

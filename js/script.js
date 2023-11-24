@@ -22,29 +22,17 @@ email_btn.addEventListener("click", function(){
 
     // ESEGUO IL CONTROLLO DEI DATI
     if(check){
-        message = "Email corretta!"
-        console.log("email corretta")
-    }
-    else{
-        message = "Email Sbagliata"
-    }
+        message = "Complimenti, l'email che hai inserito è corretta! Ora puoi lanciare i dadi!"
+        // console.log("L'email che hai inserito è corretta. Ora puoi lanciare i dadi!")
 
-    // STAMPO IL MESSAGGIO IN HTML
-    document.getElementById("email_msg").innerHTML = message;
+    // ESERCIZIO NUM 2
 
-})
+    // INDICO DOVE SI TROVA IL BOTTONE NEL DOCUMENTO
+    let dice_btn = document.getElementById("dice_btn");
 
 
-
-
-// ESERCIZIO NUM 2
-
-// INDICO DOVE SI TROVA IL BOTTONE NEL DOCUMENTO
-let dice_btn = document.getElementById("dice_btn");
-
-
-// CREO LA FUNZIONE DEL BOTTONE CHE LANCI I DADI
-dice_btn.addEventListener("click", function(){
+    // CREO LA FUNZIONE DEL BOTTONE CHE LANCI I DADI
+    dice_btn.addEventListener("click", function(){
 
     let message;
 
@@ -55,8 +43,8 @@ dice_btn.addEventListener("click", function(){
     let dado2 = Math.random() * (6 - 1) + 1 ;
     dado2 = dado2.toFixed(0);
 
-    document.getElementById("umano").innerHTML = dado2;
-    document.getElementById("computer").innerHTML = dado1;
+    document.getElementById("umano").innerHTML = `Tu: ${dado2}`;
+    document.getElementById("computer").innerHTML = ` Computer: ${dado1}`;
 
     // FACCIO IN MODO DI STAMPARE IL RISULTATO SULLA CONSOLE
     console.log(dado1);
@@ -83,4 +71,17 @@ dice_btn.addEventListener("click", function(){
     document.getElementById("dice_winner").innerHTML = message;
 
 })
+    }
+    else{
+        message = "L'email che hai inserito non è corretta. Non puoi lanciare i dadi."
+    }
+
+    // STAMPO IL MESSAGGIO IN HTML
+    document.getElementById("email_msg").innerHTML = message;
+
+})
+
+
+
+
 
